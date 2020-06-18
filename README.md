@@ -40,14 +40,14 @@
 - Página descricão 🚧️
 - Página cursos e iframe 🚧️
 
-##### Construindo Foodfy 👨‍🍳️ 🚧️
+#### - Challenge: Construindo Foodfy 👨‍🍳️ 🚧️
 
 3. Iniciando no Back-end 🚧️
 - Primeiro servidor 🚧️
 - Arquivos nunjucks e dados dinâmicos 🚧️
 - Página de descrição do curso 🚧️
 
-##### Refatorando Foodfy 👨‍🍳️ 🚧️
+#### - Challenge: Refatorando Foodfy 👨‍🍳️ 🚧️
 
 ---
 
