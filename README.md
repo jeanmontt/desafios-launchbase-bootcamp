@@ -35,8 +35,10 @@
 - [Funções e estruturas de repetição](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/01_introducao_programacao_web/desafio_01-3_funcoes-e-estruturas-de-repeticao)
 - [Aplicação: Operações bancárias](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/01_introducao_programacao_web/desafio_01-4_aplicacao-operacoes-bancarias)
 
-2. [Iniciando no Front-end:](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/02_iniciando_front_end) 🚧️
+2. [Iniciando no Front-end:](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/02_iniciando_front_end) 
 - [Primeiro HTML](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/02_iniciando_front_end/desafio_02-1_primeiro-html)
+- Página descricão 🚧️
+- Página cursos e iframe 🚧️
 
 3. Iniciando no Back-end 🚧️
 
