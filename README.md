@@ -30,12 +30,14 @@
 #### [Fase 02](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02)
 
 1. [Introdução à progração Web:](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/introducao_programacao_web)
-- [ Primeiros passos com JavaScript](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/introducao_programacao_web/desafio_01-1_primeiros-passos-com-js)
+- [Primeiros passos com JavaScript](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/introducao_programacao_web/desafio_01-1_primeiros-passos-com-js)
 - [Lidando com objetos e vetores](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/introducao_programacao_web/desafio_01-2_lidando-com-objetos-e-vetores)
 - [Funções e estruturas de repetição](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/introducao_programacao_web/desafio_01-3_funcoes-e-estruturas-de-repeticao)
 - [Aplicação: Operações bancárias](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/introducao_programacao_web/desafio_01-4_aplicacao-operacoes-bancarias)
 
-2. Iniciando no Front-end 🚧️
+2. [Iniciando no Front-end:]() 🚧️
+- [Primeiro HTML]()
+
 3. Iniciando no Back-end 🚧️
 
 ---

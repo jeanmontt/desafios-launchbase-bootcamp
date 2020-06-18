@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background: #545466;
+}
+
+header {
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+header img {
+    width: 359px;
+    height: 225px;
+}
+
+header .links {
+    margin-top: 28px;
+}
+
+header .links a {
+    margin: 30px;
+
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #290c57;
+
+    text-decoration: none;
+}
+
+header .links a:hover {
+    color: #50fa7b; 
+
+    transition: 250ms;
+}
+
