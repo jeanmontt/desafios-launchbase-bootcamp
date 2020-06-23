@@ -14,16 +14,26 @@ body {
 
 header {
     padding: 30px 30px 10px;
-
+    
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     
     align-items: center;
 
-    border-bottom: 3px solid #290c57;
+    border-bottom: 1px solid gray;
 }
 
-header img {
+.logo {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-left: 33px;
+}
+
+.logo img {
     height: 100px;
 
     border-radius: 50%;
@@ -32,23 +42,24 @@ header img {
 header h1 {
     margin-top: 7px;
 
-    color: #290c57;
+    color: white;
 
     font-size: 28px;
     font-weight: bold;
 }
 
-.links {
-    margin-top: 17px;
-}
 
 .links a {
-    margin: 30px;
+    margin: 0 30px 0;
+
+    padding-bottom: 1px;
 
     font-size: 18px;
     line-height: 28px;
     font-weight: bold;
     color: #290c57;
+
+    display: inline-block;
 
     text-decoration: none;
 }
@@ -56,13 +67,15 @@ header h1 {
 .links a:hover {
     color: #50fa7b;
 
+    border-bottom: 1px solid #50fa7b;
+
     transition: 250ms;
 }
 
 main {
     font-family: 'Roboto', sans-serif;
 
-    color: whitesmoke;
+    color: #e4dcf3;
 
     max-width: 900px;
 
@@ -115,9 +128,9 @@ footer {
     
     align-items: center;
 
-    border-top: 3px solid #290c57;
+    border-top: 1px solid gray;
 }
 
-footer .links {
-    margin-top: 0;
+footer .links a {
+    margin: 0 30px;
 }
