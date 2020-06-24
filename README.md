@@ -40,7 +40,7 @@
 - [Página descrição](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/02_iniciando_front_end/desafio_02-2_pagina-descricao) ✔️
 - [Página cursos e iframe](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/02_iniciando_front_end/desafio_02-3_pagina-cursos-e-iframe) ✔️
 
-#### - Challenge: Construindo Foodfy 👨‍🍳️ 🚧️
+#### [- Challenge: Construindo Foodfy](https://github.com/jeanmontt/foodfy) 👨‍🍳️
 
 3. Iniciando no Back-end 🚧️
 - Primeiro servidor 🚧️

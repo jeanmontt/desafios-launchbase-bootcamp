@@ -3,8 +3,6 @@ const cards = document.querySelectorAll('.card');
 const modal = document.querySelector('#modal');
 const classes = modal.classList;
 
-
-
 for (let card of cards) {
     card.addEventListener("click", function() {
         const pageID = card.getAttribute("id");
