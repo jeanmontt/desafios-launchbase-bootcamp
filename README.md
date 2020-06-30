@@ -42,8 +42,8 @@
 
 #### [- Challenge: Construindo Foodfy](https://github.com/jeanmontt/foodfy) 👨‍🍳️ ✔️
 
-3. Iniciando no Back-end 🚧️
-- Primeiro servidor 🚧️
+3. [Iniciando no Back-end](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/03_inciando_back_end)
+- [Primeiro servidor](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/03_inciando_back_end/desafio_03-1_primeiro-servidor) 🚧
 - Arquivos nunjucks e dados dinâmicos 🚧️
 - Página de descrição do curso 🚧️
 
