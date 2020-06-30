@@ -44,7 +44,7 @@
 
 3. [Iniciando no Back-end:](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/03_inciando_back_end)
 - [Primeiro servidor](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/03_inciando_back_end/desafio_03-1_primeiro-servidor) ✔️
-- Arquivos nunjucks e dados dinâmicos 🚧️
+- [Arquivos nunjucks e dados dinâmicos](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/03_inciando_back_end/desafio_03-2_nunjucks-e-dados-dinamicos) ✔️
 - Página de descrição do curso 🚧️
 
 #### - Challenge: Refatorando Foodfy 👨‍🍳️ 🚧️
