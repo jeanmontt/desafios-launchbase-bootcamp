@@ -1,0 +1,15 @@
+{
+  "name": "desafio_03-2_nunjucks-e-dados-dinamicos",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
