@@ -1,0 +1,189 @@
+#wrapper {
+    padding: 32px;
+}
+
+#wrapper h1 {
+    text-align: center;
+
+    font-size: 42px;
+    font-weight: 52px;
+}
+
+.cards {
+    width: 1100px;
+    height: 568.69px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    cursor: pointer;
+}
+
+.card {
+    background-color: #1b1d23;
+
+    text-align: center;
+
+    padding: 2px;
+}
+
+#starter .card-number h3 {
+    width: 33px;
+
+    font-size: 15px;
+    line-height: 25px;
+
+    margin: 60px auto 0;
+
+    padding: 5px 1px 5px;
+
+    color: var(--color-starter);
+
+    border: 2px solid var(--color-starter);
+    border-radius: 50%;
+}
+
+#launchbase .card-number h3 {
+    width: 33px;
+
+    font-size: 15px;
+    line-height: 25px;
+
+    margin: 60px auto 0;
+
+    padding: 5px 1px 5px;
+
+    color: var(--color-launchbase);
+
+    border: 2px solid var(--color-launchbase);
+    border-radius: 50%;
+}
+
+#gostack .card-number h3 {
+    width: 33px;
+
+    font-size: 15px;
+    line-height: 25px;
+
+    margin: 60px auto 0;
+
+    padding: 5px 1px 5px;
+
+    color: var(--color-gostack);
+
+    border: 2px solid var(--color-gostack);
+    border-radius: 50%;
+}
+
+#starter:hover {
+
+    border: 2px solid var(--color-starter);
+    transition: 250ms;
+}
+
+#launchbase:hover {
+    border: 2px solid var(--color-launchbase);
+
+    transition: 250ms;
+}
+
+#gostack:hover {
+    border: 2px solid var(--color-gostack);
+
+    transition: 250ms;
+}
+
+.card.grow:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+    transition: 250ms;
+}
+
+#starter .card-image img {
+    max-width: 250px;
+    height: 156.7px;
+
+    margin: 75px auto 0;
+}
+
+#launchbase .card-image img {
+    max-width: 250px;
+
+    margin: 75px auto 0;
+}
+
+#gostack .card-image img {
+    max-width: 250px;
+    height: 156.7px;
+
+    margin: 75px auto 0;
+}
+
+.card-content {
+    padding: 24px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    margin-top: 30px;
+}
+
+.card-content p {
+    max-width: 250px;
+
+    text-align: center;
+
+    margin: auto;
+}
+
+#starter .card-content strong {
+    color: var(--color-starter);
+}
+
+#launchbase .card-content strong {
+    color: var(--color-launchbase);
+}
+
+#gostack .card-content strong {
+    color: var(--color-gostack);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    text-align: center;
+
+    margin: 40px 10px;
+}
+
+#starter .info p.price {
+    background-color: var(--color-starter);
+
+    border-radius: 8px;
+
+    opacity: 0.8;
+}
+
+#launchbase .info p.price {
+    background-color: var(--color-launchbase);
+
+    border-radius: 8px;
+
+    opacity: 0.8;
+}
+
+#gostack .info p.price {
+    background-color: var(--color-gostack);
+
+    border-radius: 8px;
+
+    opacity: 0.8;
+}

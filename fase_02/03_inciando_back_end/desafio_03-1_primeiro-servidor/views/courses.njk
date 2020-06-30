@@ -1,0 +1,98 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Conteúdo</title>
+{% endblock head %}
+
+{% block content %}
+    <div id="wrapper">
+        <h1>Cursos</h1>
+    </div>
+
+    <section class="cards">
+        <div class="card grow" id="starter">
+            <div class="card-number">
+                <h3>01</h3>
+            </div>
+            <div class="card-image">
+                <img src="assets/starter.svg" alt="JavaScript">
+            </div>
+            <div class="card-content">
+                <p>
+                    <strong>Torne-se um programador desejado</strong>
+                    no mercado com estes cursos gratuitos
+                </p>
+            </div>
+            <div class="info">
+                <p>11 módulos</p>
+                <p class="price">Gratuito</p>
+            </div>
+        </div>
+
+        <div class="card grow" id="launchbase">
+            <div class="card-number">
+                <h3>02</h3>
+            </div>
+            <div class="card-image">
+                <img src="assets/launchbase.svg" alt="NodeJS">
+            </div>
+            <div class="card-content">
+                <p>
+                    <strong>Domine a programação do zero</strong>
+                    e tenha acesso às melhores oportunidades do mercado
+                </p>
+            </div>
+            <div class="info">
+                <p>52 módulos + bônus</p>
+                <p class="price">Pago</p>
+            </div>
+        </div>
+
+        <div class="card grow" id="gostack">
+            <div class="card-number">
+                <h3>03</h3>
+            </div>
+            <div class="card-image">
+                <img src="assets/gostack.svg" alt="ReactJS">
+            </div>
+            <div class="card-content">
+                <p>
+                    <strong>Treinamento imersivo</strong>
+                    nas tecnologias mais modernas de desenvolvimento web e mobile
+                </p>
+            </div>
+            <div class="info">
+                <p>60 módulos + bônus</p>
+                <p class="price">Pago</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay">
+
+        <div id="modal" class="modal">
+            <a class="close-modal">
+                <i class="material-icons">
+                    close
+                </i>
+            </a>
+
+            <a class="maximize-modal">
+                <i class="material-icons">
+                    flip_to_front
+                </i>
+            </a>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/scripts.js"></script>
+{% endblock content %}
