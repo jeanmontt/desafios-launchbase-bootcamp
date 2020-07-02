@@ -1,0 +1,83 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Rocketseat</title>
+{% endblock head %}
+
+{% block content %}
+    <div id="wrapper">
+        <h1>Sobre</h1>
+
+        <section class="about">
+            <div class="about-logo">
+                <img src="assets/rocketseat.png" alt="Logo Rocketseat">
+
+                <h1>Rocketseat</h1>
+            </div>
+
+            <div class="about-p">
+                <p>
+                    Mais do que uma plataforma de educação em tecnologia, somos uma comunidade incrível de programadores em busca do próximo nível. 🚀
+                </p>
+
+                <p>
+                    Em um mundo onde a informação fica obsoleta cada vez mais rápido, velocidade de aprendizado é a chave para o sucesso.
+                </p>
+
+                <p>
+                    Por isso a Rocketseat oferece através de uma plataforma inteligente e metodologia prática, além de comunidade, eventos, conteúdo e conexão com o mercado de trabalho, todas as ferramentas que você precisa para masterizar no menor tempo possível as tecnologias mais modernas de desenvolvimento web e mobile, e dessa forma avançar para o próximo nível como programador.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="tech">
+        <div class="title">
+            <h1>Principais tecnologias utilizadas</h1>
+        </div>
+        <section class="cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/javascript.svg" alt="JavaScript">
+                </div>
+                <div class="card-content">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/nodejs.svg" alt="NodeJS">
+                </div>
+                <div class="card-content">
+                    <p>NodeJS</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/reactjs.svg" alt="ReactJS">
+                </div>
+                <div class="card-content">
+                    <p>ReactJS</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/react-native.svg" alt="React Native">
+                </div>
+                <div class="card-content">
+                    <p>React Native</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="svg">
+            <img src="assets/launch.svg" alt="Imagem Launch">
+        </div>
+    </div>
+{% endblock content %}

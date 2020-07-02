@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/course.css">
+
+    <title>{{ info.title }}</title>
+{% endblock head %}
+
+
+{% block content %}
+    <h1>{{ info.title }}</h1>
+
+    <div class="content">
+        <div class="image_container">
+            <img src="/assets/{{ info.id }}.svg" alt="{{ info.img_alt }}">
+        </div>
+
+        <div class="info">
+            <p>{{ info.description }}</p>
+
+            <p>Este curso possui um total de {{ info.module }}</p>
+
+            <p class="price">{{ info.price }}</p>
+
+            <a href="http://rocketseat.com.br/{{ info.id }}" target="_blank">Confira aqui</a>
+        </div>
+    </div>
+
+{% endblock content %}

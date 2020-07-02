@@ -1,0 +1,98 @@
+#wrapper {
+    padding: 32px;
+}
+
+#wrapper h1 {
+    text-align: center;
+
+    font-size: 42px;
+    font-weight: 52px;
+}
+
+#wrapper .about {
+    display: flex;
+
+    margin-top: 32px;
+}
+
+#wrapper .about-logo {
+    max-width: 302px;
+
+    text-align: center;
+
+    margin: auto;
+}
+
+#wrapper .about-logo img {
+    border: 2px solid var(--color-green);
+
+    border-radius: 50%;
+
+    height: 250px;
+}
+
+#wrapper .about-logo h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#wrapper .about-p {
+    margin-left: 50px;
+}
+
+#wrapper .about-p p {
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.9;
+
+    margin-bottom: 20px;
+}
+
+#tech {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1 {
+    text-align: center;
+
+    font-size: 32px;
+    font-weight: 52px;
+
+    margin: 32px 0 0 125px;
+
+    position: absolute;
+}
+
+.cards {
+    max-width: 300px;
+
+    margin-top: 120px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--background);
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-content {
+    padding: 24px;
+
+    text-align: center;
+
+    font-size: 20px;
+}
+
+.svg img {
+    height: 500px;
+
+    margin: 70px 125px 0 0;
+}

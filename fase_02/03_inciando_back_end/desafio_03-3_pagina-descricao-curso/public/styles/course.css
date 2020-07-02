@@ -1,0 +1,45 @@
+main h1 {
+    text-align: center;
+
+    margin: 30px 0;
+}
+
+.image_container {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.image_container img {
+    max-width: 250px;
+    height: 156.7px;
+}
+
+.info {
+    text-align: center;
+}
+
+.content {
+    margin-bottom: 75px;
+}
+
+.content .info p {
+    margin-bottom: 10px;
+}
+
+.content .info p.price {
+    font-weight: bold;
+}
+
+.content .info a {
+    text-decoration: none;
+
+    color: var(--color-green);
+}
+
+.content .info a:hover {
+    opacity: 0.7;
+
+    transition: 300ms;
+}
+
