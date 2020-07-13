@@ -47,7 +47,20 @@
 - [Arquivos nunjucks e dados dinâmicos](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/03_inciando_back_end/desafio_03-2_nunjucks-e-dados-dinamicos) ✔️
 - [Página de descrição do curso](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_02/03_inciando_back_end/desafio_03-3_pagina-descricao-curso) ✔️
 
-#### - Challenge: Refatorando Foodfy 👨‍🍳️ 🚧️
+#### [- Challenge: Refatorando Foodfy](https://github.com/jeanmontt/foodfy) 👨‍🍳️ ✔️
+
+#### [Fase 03](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03)
+
+4. [Controle de Academia](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia)
+- [Header](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-1_header) ✔️
+- Card do Professor 🚧️
+- Formulário e Rota de cadastro do Professor 🚧️
+- Apresentação, edição e formatação dos dados de um professor 🚧️
+- HTTP: PUT e DELETE 🚧️
+- Listagem de professores 🚧️
+- Estruturando estudantes 🚧️
+
+#### - Challenge: Admin Foodfy 👨‍🍳️ 🚧️
 
 ---
 
