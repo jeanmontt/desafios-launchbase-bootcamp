@@ -28,14 +28,14 @@
 
 ## :rocket: Desafios
 
-- [Header]() ✔️
-- [Card do Professor]() 🚧️
-- [Formulário e Rota de cadastro do Professor]() 🚧️
-- [Apresentação, edição e formatação dos dados de um professor]() 🚧️
-- [HTTP: PUT e DELETE]() 🚧️
-- [Listagem de professores]() 🚧️ 
-- [Estruturando estudantes]() 🚧️
-- [Administração do Foodfy]() 🚧️
+- [Header](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-1_header) ✔️
+- Card do Professor 🚧️
+- Formulário e Rota de cadastro do Professor 🚧️
+- Apresentação, edição e formatação dos dados de um professor 🚧️
+- HTTP: PUT e DELETE 🚧️
+- Listagem de professores 🚧️ 
+- Estruturando estudantes 🚧️
+- Administração do Foodfy 🚧️
 
 ## :calendar: Entrega
 
