@@ -1,0 +1,27 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/index.css">
+
+    <title>Desafio 2-3: Primeiro HTML</title>
+{% endblock head %}
+
+{% block content %}
+    <main>
+        <div id="wrapper">
+            <img src="{{about.avatar_url}}" alt="Foto perfil de {{ about.name }}">
+
+            <h1>{{ about.name }}</h1>
+            <h2>{{ about.role }}</h2>
+            <p>{{ about.description }}</p>
+        </div>
+
+        <div id="social-media">
+            {% for link in about.links %}
+                <a href="{{ link.url }}" target="_blank"><img src="{{link.img}}" alt="{{link.name}}" class="grow"></a>
+            {% endfor %}
+
+        </div>
+    </main>
+{% endblock %}
