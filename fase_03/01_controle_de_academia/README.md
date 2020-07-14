@@ -29,7 +29,7 @@
 ## :rocket: Desafios
 
 - [Header](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-1_header) ✔️
-- Card do Professor 🚧️
+- [Card do Professor](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-2_card-teacher) ✔️
 - Formulário e Rota de cadastro do Professor 🚧️
 - Apresentação, edição e formatação dos dados de um professor 🚧️
 - HTTP: PUT e DELETE 🚧️
