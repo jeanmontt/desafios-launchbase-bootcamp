@@ -5,6 +5,9 @@ const routes = require('./routes');
 
 const server = express();
 
+//Config recebimento de dados no body
+server.use(express.urlencoded({ extended: true }));
+
 //Config statics
 server.use(express.static('public'));
 
