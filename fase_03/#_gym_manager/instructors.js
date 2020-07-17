@@ -1,5 +1,8 @@
 const fs = require('fs');   //requisição do file system
 const data = require('./data.json'); //requisição dos dados
+const { age } = require('./utils'); //desestruturando e requerendo a função age
+const Intl = require('intl');  //requerendo o Intl para formatação
+
 
 // ============= POST =============
 exports.post = function (req, res) {
@@ -39,4 +42,28 @@ exports.post = function (req, res) {
 
         return res.redirect("/instructors");
     });
+};
+
+
+// ============= SHOW =============
+exports.show = function (req, res) {
+    const { id } = req.params;  //desestruturando o id do params
+
+    const foundInstructor = data.instructors.find(function(instructor) {    //procurando instrutor dentro do BD
+        return instructor.id == id;     // se o id do instrutor for igual ao id do params retorna true
+    })
+
+    if (! foundInstructor) {    //se não encontrou o instrutor
+        return res.send("Instructor not found!");   //retorna a menssagem
+    }
+
+    //tratando os dados
+    const instructor = {
+        ...foundInstructor,     //espalhando (spread operator = coloca dentro do objeto instructor todo o que ha dentro do objeto foundInstructor) os dados dentro da variável
+        age: age(foundInstructor.birth),    //inserindo idade com a function age
+        services: foundInstructor.services.split(","),  //.spli() transforma uma string em um array, dentro do parênteses é informado onde é a quebra, neste caso, na vírgula
+        created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at),    //formatando timestamp para data pt-br
+    }
+
+    return res.render("instructors/show", { instructor }); //se encontrou o instrutor renderiza a page show enviando os dados do "instructor"
 };
