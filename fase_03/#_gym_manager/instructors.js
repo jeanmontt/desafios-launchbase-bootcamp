@@ -1,6 +1,6 @@
 const fs = require('fs');   //requisição do file system
 const data = require('./data.json'); //requisição dos dados
-const { age } = require('./utils'); //desestruturando e requerendo a função age
+const { age, date } = require('./utils'); //desestruturando e requerendo as funções age e date
 const Intl = require('intl');  //requerendo o Intl para formatação
 
 
@@ -67,3 +67,23 @@ exports.show = function (req, res) {
 
     return res.render("instructors/show", { instructor }); //se encontrou o instrutor renderiza a page show enviando os dados do "instructor"
 };
+
+// ============= EDIT =============
+exports.edit = function (req, res) {
+    const { id } = req.params;  //desestruturando o id do params
+
+    const foundInstructor = data.instructors.find(function(instructor) {    //procurando instrutor dentro do BD
+        return instructor.id == id;     // se o id do instrutor for igual ao id do params retorna true
+    })
+
+    if (! foundInstructor) {    //se não encontrou o instrutor
+        return res.send("Instructor not found!");   //retorna a menssagem
+    }
+
+    instructor = {
+        ...foundInstructor,
+        birth: date(foundInstructor.birth)
+    }
+
+    return res.render("instructors/edit", { instructor })
+}

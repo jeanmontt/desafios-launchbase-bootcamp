@@ -12,5 +12,15 @@ module.exports = {
         }
     
         return age; 
+    },
+
+    //lógica para retornar padrão de data yyyy-mm-dd
+    date: function (timestamp) {
+        const date = new Date(timestamp);
+        const year = date.getUTCFullYear();     // converte utilizando o tempo universal
+        const month = `0${date.getUTCMonth() + 1}`.slice(-2);      //.getMonth retorna o mês de 0 a 11, então soma 1 para chegar ao mês exato
+        const day = `0${date.getUTCDate()}`.slice(-2);      //.slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é necessário) de um array original. O Array original não é modificado.
+
+        return `${year}-${month}-${day}`;
     }
 }
