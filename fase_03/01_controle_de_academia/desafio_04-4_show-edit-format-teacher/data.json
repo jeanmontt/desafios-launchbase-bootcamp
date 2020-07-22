@@ -1,0 +1,14 @@
+{
+    "teachers": [
+        {
+            "id": 1,
+            "avatar_url": "https://google.com",
+            "name": "Jean Araujo Monteiro",
+            "birth": 577584000000,
+            "education": "D",
+            "class_type": "Presencial",
+            "expertise": "Matemática, Física",
+            "created_at": 1595374519663
+        }
+    ]
+}
