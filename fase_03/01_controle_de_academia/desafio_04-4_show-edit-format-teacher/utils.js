@@ -14,6 +14,22 @@ module.exports = {
         return age; 
     },
 
+    //lógica para renderizar o grau de escolaridade
+    graduation: function(graduations) {
+        let graduation = graduations;
+
+        switch (graduation) {
+            case "EM":
+                return graduation = "Ensino Médio completo";
+            case "ES":
+                return graduation = "Ensino Superior completo";
+            case "M":
+                return graduation = "Mestrado";
+            case "D":
+                return graduation = "Doutorado";
+        }
+    },
+
     //lógica para retornar padrão de data yyyy-mm-dd
     date: function (timestamp) {
         const date = new Date(timestamp);

@@ -1,6 +1,6 @@
 const fs = require('fs');   //requisição do file system
 const data = require('./data.json'); //requisição dos dados
-const { age, date } = require('./utils'); //desestruturando e requerendo as funções age e date
+const { age, date, graduation } = require('./utils'); //desestruturando e requerendo as funções age e date
 const Intl = require('intl');  //requerendo o Intl para formatação
 
 // ============= POST =============
@@ -62,6 +62,7 @@ exports.show = function (req, res) {
         age: age(foundTeacher.birth),    //inserindo idade com a function age
         expertise: foundTeacher.expertise.split(","),  //.spli() transforma uma string em um array, dentro do parênteses é informado onde é a quebra, neste caso, na vírgula
         created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at),    //formatando timestamp para data pt-br
+        education: graduation(foundTeacher.education),
     }
 
     return res.render("teachers/show", { teacher }); //se encontrou o professor renderiza a page show enviando os dados do "teacher"
