@@ -118,3 +118,20 @@ exports.put = function (req, res) {
         return res.redirect(`/instructors/${id}`);      //não havendo erro redireciona para a página do instrutor
     })
 }
+
+// ============= DELETE =============
+exports.delete = function (req, res) {
+    const { id } = req.body;    //desestruturando o id do body
+
+    const filteredInstructors = data.instructors.filter(function(instructor) {      //para cada instrutor roda a função e envia para dentro o instrutor, retornando um boleano, todo que for true é inserido no array e false removido do array
+        return instructor.id != id;     //verifica se o instructor.id é diferente do id em execução, sendo verdadeiro ele insere na filteredInstructor, sendo falso remove da variável
+    })
+
+    data.instructors = filteredInstructors;     //atualiza o BD removendo o instrutor requerido
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 4), function(err) {        //escreve o DB
+        if (err) return res.send("Write file error!");      //havendo erro envia mensagem
+
+        return res.redirect("/instructors");        //não havendo erro redireciona para page
+    })
+}

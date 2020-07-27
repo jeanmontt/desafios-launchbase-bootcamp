@@ -1,15 +1,6 @@
 {
     "instructors": [
         {
-            "id": "1",
-            "avatar_url": "https://google.com",
-            "name": "Jean Araujo",
-            "birth": 577584000000,
-            "gender": "M",
-            "services": "Musculação, Crossfit",
-            "created_at": 1594926690645
-        },
-        {
             "id": 2,
             "avatar_url": "https://google.com",
             "name": "Papersider",
@@ -17,6 +8,24 @@
             "gender": "M",
             "services": "Musculação",
             "created_at": 1595013142250
+        },
+        {
+            "id": 3,
+            "avatar_url": "https://google.com",
+            "name": "Jean Araujo Monteiro",
+            "birth": 577584000000,
+            "gender": "F",
+            "services": "Musculação, Crossfit",
+            "created_at": 1595873293930
+        },
+        {
+            "id": 3,
+            "avatar_url": "https://google.com",
+            "name": "Jean Araujo Monteiro",
+            "birth": 577584000000,
+            "gender": "M",
+            "services": "Musculação, Crossfit",
+            "created_at": 1595876601323
         }
     ]
 }
