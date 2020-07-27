@@ -2,17 +2,16 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
 const routes = require('./routes');
+const methodOverride = require('method-override');
 
 const server = express();
 
-//Config recebimento de dados no body
-server.use(express.urlencoded({ extended: true }));
 
-//Config statics
-server.use(express.static('public'));
+server.use(express.urlencoded({ extended: true }));     //Config recebimento de dados no body
+server.use(express.static('public'));   //Config statics
+server.use(methodOverride('_method'));  //Config method-override
+server.use(routes);     //Config routes
 
-//Config routes
-server.use(routes);
 
 //config template engine
 server.set("view engine", "njk");

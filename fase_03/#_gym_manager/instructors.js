@@ -87,3 +87,34 @@ exports.edit = function (req, res) {
 
     return res.render("instructors/edit", { instructor })
 }
+
+// ============= PUT =============
+exports.put = function (req, res) {
+    const { id } = req.body;  //desestruturando o id do body
+    let index = 0;
+
+    const foundInstructor = data.instructors.find(function(instructor, foundIndex) {    //procurando instrutor e o index dentro do BD
+        if (id == instructor.id) {      //se o id do req.body for igual ao id do instructor
+            index = foundIndex;     //adicionar o index encontrado à variável index
+            return true     //retorna verdadeiro pois o instrutor foi encontrado
+        }
+    })
+
+    if (! foundInstructor) {    //se não encontrou o instrutor
+        return res.send("Instructor not found!");   //retorna a menssagem
+    }
+
+    const instructor = {
+        ...foundInstructor,     //espalha todos os dado do foundInstructor dentro da variável instructor
+        ...req.body,    //espalha todos os dados recebidos no req.body dentro da variável instructor
+        birth: Date.parse(req.body.birth),  //padronizando data de nascimento recebida no req.body para TIMESTAMP
+    }
+
+    data.instructors[index] = instructor;   //coloca no instructor encontrato os dados tratados na variável instructor
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 4), function(err) {
+        if(err) return res.send("Write error!");        //se houver algum erro retorna a mensagem de erro
+
+        return res.redirect(`/instructors/${id}`);      //não havendo erro redireciona para a página do instrutor
+    })
+}

@@ -1,9 +1,9 @@
 {
     "instructors": [
         {
-            "id": 1,
+            "id": "1",
             "avatar_url": "https://google.com",
-            "name": "Jean Araujo Monteiro",
+            "name": "Jean Araujo",
             "birth": 577584000000,
             "gender": "M",
             "services": "Musculação, Crossfit",
