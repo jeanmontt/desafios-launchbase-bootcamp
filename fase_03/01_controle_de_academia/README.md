@@ -33,7 +33,7 @@
 - [Formulário e Rota de cadastro do Professor](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-3_form-and-routes-teacher) ✔️
 - [Apresentação, edição e formatação dos dados de um professor](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-4_show-edit-format-teacher) ✔️
 - [HTTP: PUT e DELETE](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-5_put-delete-teacher) ✔️
-- Listagem de professores 🚧️ 
+- [Listagem de professores](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-6_list-teachers) ✔️
 - Estruturando estudantes 🚧️
 - Administração do Foodfy 🚧️
 
