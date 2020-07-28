@@ -1,0 +1,59 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/create.css">
+    <link rel="stylesheet" href="/styles/keyframes.css">
+{% endblock head %}
+
+{% block content %}
+    <div class="card">
+        <section class="avatar" style="background: url({{ teacher.avatar_url }}) no-repeat center center / cover">
+
+        </section>
+
+        <section class="details">
+            <h3>DETALHES</h3>
+
+            <div class="item">
+                <div>Professor</div>
+                <div>{{ teacher.name }}</div>
+            </div>
+
+            <div class="item">
+                <div>Idade</div>
+                <div>{{ teacher.age }}</div>
+            </div>
+
+            <div class="item">
+                <div>Grau de escolaridade</div>
+                <div>{{ teacher.education }}</div>
+            </div>
+
+            <div class="item">
+                <div>Tipo de aula</div>
+                <div>
+                    <span>{{ teacher.class_type }}</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Acompanhamento</div>
+                <div>
+                    {% for expertise in teacher.expertise %}
+                        <span>{{ expertise }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Desde</div>
+                <div>{{ teacher.created_at }}</div>
+            </div>
+
+            <a href="/teachers/{{ teacher.id }}/edit" class="button">Editar</a>
+        </section>
+    </div>
+{% endblock content %}
+
