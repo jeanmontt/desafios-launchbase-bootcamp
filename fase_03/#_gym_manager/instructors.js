@@ -4,6 +4,20 @@ const { age, date } = require('./utils'); //desestruturando e requerendo as fun�
 const Intl = require('intl');  //requerendo o Intl para formatação
 
 
+exports.index = function (req, res) {
+    const instructors = []
+    
+    for(let foundInstructor of data.instructors){
+        const instructor = {
+            ...foundInstructor,
+            services: foundInstructor.services.split(',')
+        }
+        instructors.push(instructor)
+    }
+
+    return res.render("instructors/index", { instructors });
+}
+
 // ============= POST =============
 exports.post = function (req, res) {
     //estrutura de validação de dados
@@ -108,6 +122,7 @@ exports.put = function (req, res) {
         ...foundInstructor,     //espalha todos os dado do foundInstructor dentro da variável instructor
         ...req.body,    //espalha todos os dados recebidos no req.body dentro da variável instructor
         birth: Date.parse(req.body.birth),  //padronizando data de nascimento recebida no req.body para TIMESTAMP
+        id: Number(req.body.id),
     }
 
     data.instructors[index] = instructor;   //coloca no instructor encontrato os dados tratados na variável instructor
