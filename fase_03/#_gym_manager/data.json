@@ -27,5 +27,29 @@
             "services": "Musculação, Crossfit, Natação, Yoga",
             "created_at": 1595876601323
         }
+    ],
+    "members": [
+        {
+            "avatar_url": "https://images.unsplash.com/photo-1553531580-a000ac8df244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=282&q=80",
+            "name": "Vivian Barbosa",
+            "email": "vivianmcb@hotmail.com",
+            "birth": 690595200000,
+            "gender": "F",
+            "weight": "55",
+            "height": "173",
+            "blood": "O-",
+            "id": 1
+        },
+        {
+            "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+            "name": "Jean Monteiro",
+            "email": "jeanmontt@hotmail.com",
+            "birth": 577584000000,
+            "gender": "M",
+            "weight": "78",
+            "height": "188",
+            "blood": "O-",
+            "id": 2
+        }
     ]
 }
