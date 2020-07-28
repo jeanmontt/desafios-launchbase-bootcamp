@@ -122,7 +122,7 @@ exports.put = function (req, res) {
         ...foundInstructor,     //espalha todos os dado do foundInstructor dentro da variável instructor
         ...req.body,    //espalha todos os dados recebidos no req.body dentro da variável instructor
         birth: Date.parse(req.body.birth),  //padronizando data de nascimento recebida no req.body para TIMESTAMP
-        id: Number(req.body.id),
+        id: Number(req.body.id),    //padronizando o id com o constructor Number
     }
 
     data.instructors[index] = instructor;   //coloca no instructor encontrato os dados tratados na variável instructor
