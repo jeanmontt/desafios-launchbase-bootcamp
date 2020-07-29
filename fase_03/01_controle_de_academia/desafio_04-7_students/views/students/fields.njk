@@ -1,0 +1,69 @@
+<div class="item">
+    <div>Avatar</div>
+    <div>
+        <input type="url" name="avatar_url" placeholder="http://" value="{{ student.avatar_url }}">
+    </div>
+
+</div>
+
+<div class="item">
+    <div>Aluno</div>
+    <div>
+        <input type="text" name="name" placeholder="Nome do Aluno" value="{{ student.name }}">
+    </div>
+</div>
+
+<div class="item">
+    <div>email</div>
+    <div>
+        <input type="email" name="email" value="{{ student.email }}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Data de nascimento</div>
+    <div>
+        <input type="date" name="birth" value="{{ student.birth }}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Ano Escolar</div>
+    <div>
+        <select name="school_year">
+            <option value="5º ano (fundamental)" {% if student.school_year == '5º ano (fundamental)' %} selected="selected" {% endif %}>
+                5º ano (fundamental)
+            </option>
+            <option value="6º ano (fundamental)" {% if student.school_year == '6º ano (fundamental)' %} selected="selected" {% endif %}>
+                6º ano (fundamental)
+            </option>
+            <option value="7º ano (fundamental)" {% if student.school_year == '7º ano (fundamental)' %} selected="selected" {% endif %}>
+                7º ano (fundamental)
+            </option>
+            <option value="8º ano (fundamental)" {% if student.school_year == '8º ano (fundamental)' %} selected="selected" {% endif %}>
+                8º ano (fundamental)
+            </option>
+            <option value="9º ano (fundamental)" {% if student.school_year == '9º ano (fundamental)' %} selected="selected" {% endif %}>
+                9º ano (fundamental)
+            </option>
+            <option value="1º ano (médio)" {% if student.school_year == '1º ano (médio)' %} selected="selected" {% endif %}>
+                1º ano (médio)
+            </option>
+            <option value="2º ano (médio)" {% if student.school_year == '2º ano (médio)' %} selected="selected" {% endif %}>
+                2º ano (médio)
+            </option>
+            <option value="3º ano (médio)" {% if student.school_year == '3º ano (médio)' %} selected="selected" {% endif %}>
+                3º ano (médio)
+            </option>
+        </select>
+    </div>
+</div>
+
+<div class="item">
+    <div>Carga horária semanal</div>
+    <div>
+        <input type="number" name="hours" value="{{ student.hours }}">
+    </div>
+</div>
+
+<button class="save" type="submit">Salvar</button>

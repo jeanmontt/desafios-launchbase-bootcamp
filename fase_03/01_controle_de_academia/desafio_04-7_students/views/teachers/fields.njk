@@ -1,12 +1,7 @@
 <div class="item">
     <div>Avatar</div>
     <div>
-        <input 
-            type="url" 
-            name="avatar_url" 
-            placeholder="http://"
-            value="{{ teacher.avatar_url }}"
-        >
+        <input type="url" name="avatar_url" placeholder="http://" value="{{ teacher.avatar_url }}">
     </div>
 
 </div>
@@ -14,23 +9,14 @@
 <div class="item">
     <div>Professor</div>
     <div>
-        <input 
-            type="text" 
-            name="name" 
-            placeholder="Nome do professor"
-            value="{{ teacher.name }}"
-        >
+        <input type="text" name="name" placeholder="Nome do professor" value="{{ teacher.name }}">
     </div>
 </div>
 
 <div class="item">
     <div>Data de nascimento</div>
     <div>
-        <input 
-            type="date" 
-            name="birth"
-            value="{{ teacher.birth }}"
-        >
+        <input type="date" name="birth" value="{{ teacher.birth }}">
     </div>
 </div>
 
@@ -38,33 +24,13 @@
     <div>Grau de Ecolaridade</div>
     <div>
         <select name="education">
-            <option 
-                value="EM" 
-                {% if teacher.education == 'EM' %}
-                    selected
-                {% endif %}  
-                >Ensino Médio completo
+            <option value="EM" {% if teacher.education == 'EM' %} selected {% endif %}>Ensino Médio completo
             </option>
-            <option 
-                value="ES" 
-                {% if teacher.education == 'ES' %}
-                    selected
-                {% endif %}  
-                >Ensino Superior completo
+            <option value="ES" {% if teacher.education == 'ES' %} selected {% endif %}>Ensino Superior completo
             </option>
-            <option 
-                value="M"
-                {% if teacher.education == 'M' %}
-                    selected
-                {% endif %}  
-                >Mestrado
+            <option value="M" {% if teacher.education == 'M' %} selected {% endif %}>Mestrado
             </option>
-            <option 
-                value="D"
-                {% if teacher.education == 'D' %}
-                    selected
-                {% endif %}  
-                >Doutorado
+            <option value="D" {% if teacher.education == 'D' %} selected {% endif %}>Doutorado
             </option>
         </select>
     </div>
@@ -74,24 +40,10 @@
     <div>Tipo de Aula</div>
     <div>
         <span>
-            <input 
-                type="radio" 
-                name="class_type" 
-                value="Presencial" 
-                {% if class_type == 'Presencial' %}
-                    checked
-                {% endif %} 
-                >Presencial
+            <input type="radio" name="class_type" value="Presencial" {% if class_type == 'Presencial' %} checked {% endif %}>Presencial
         </span>
         <span>
-            <input 
-                type="radio" 
-                name="class_type" 
-                value="À distância"
-                {% if class_type == 'À distância' %}
-                    checked
-                {% endif %} 
-                >À distância
+            <input type="radio" name="class_type" value="À distância" {% if class_type == 'À distância' %} checked {% endif %}>À distância
         </span>
     </div>
 </div>
@@ -99,12 +51,7 @@
 <div class="item">
     <div>Área de atuação</div>
     <div>
-        <input 
-            type="text" 
-            name="expertise" 
-            placeholder="Separe as áreas de atuação por vírgula"
-            value="{{ teacher.expertise }}"
-        >
+        <input type="text" name="expertise" placeholder="Separe as áreas de atuação por vírgula" value="{{ teacher.expertise }}">
     </div>
 </div>
 

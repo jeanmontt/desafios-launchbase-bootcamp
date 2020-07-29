@@ -1,8 +1,9 @@
 const fs = require('fs');   //requisição do file system
-const data = require('./data.json'); //requisição dos dados
-const { age, date, graduation } = require('./utils'); //desestruturando e requerendo as funções age e date
+const data = require('../data.json'); //requisição dos dados
+const { age, date, graduation } = require('../public/scripts/utils'); //desestruturando e requerendo as funções age e date
 const Intl = require('intl');  //requerendo o Intl para formatação
 
+// ============= INDEX =============
 exports.index = function (req, res) {
     const teachers = []
     
@@ -15,6 +16,11 @@ exports.index = function (req, res) {
     }
 
     return res.render("teachers/index", { teachers });
+}
+
+// ============= CREATE =============
+exports.create = function (req, res) {
+    return res.render("teachers/create")
 }
 
 // ============= POST =============

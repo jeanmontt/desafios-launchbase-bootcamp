@@ -30,5 +30,34 @@
             "expertise": "Matemática, Física",
             "created_at": 1595954674558
         }
+    ],
+    "students": [
+        {
+            "avatar_url": "https://images.unsplash.com/photo-1541855492-581f618f69a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+            "name": "Jean Monteiro",
+            "email": "jeanmontt@hotmail.com",
+            "birth": 577584000000,
+            "school_year": "3º ano (médio)",
+            "hours": "35",
+            "id": 1
+        },
+        {
+            "avatar_url": "https://images.unsplash.com/photo-1595347097560-69238724e7bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+            "name": "Felippe Monteiro",
+            "email": "felippeamonteiro@msn.com",
+            "birth": 436492800000,
+            "school_year": "2º ano (médio)",
+            "hours": "15",
+            "id": 2
+        },
+        {
+            "avatar_url": "https://images.unsplash.com/photo-1554555819-f722cb0c01c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+            "name": "Vivian Barbosa",
+            "email": "vivianmcb@hotmail.com",
+            "birth": 690595200000,
+            "school_year": "9º ano (fundamental)",
+            "hours": "25",
+            "id": 3
+        }
     ]
 }
