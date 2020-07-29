@@ -1,0 +1,169 @@
+.card {
+    background-color: white;
+
+    width: 800px;
+    min-height: 400px;
+
+    margin: 45px auto;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    box-shadow: 8px 8px 6px -2px black;
+
+    animation: up 300ms ease-out;
+}
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    padding: 16px 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+    color: #777;
+
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+}
+
+.details .item div:nth-child(2) {
+    color: #555;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.details h3 {
+    color: var(--primary-color);
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.details .item span {
+    background-color: teal;
+
+    padding: 8px 16px;
+
+    margin-right: 4px;
+    margin-top: 8px;
+
+    border-radius: 16px;
+
+    color: whitesmoke;
+
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    display: inline-block;
+}
+
+/* ========== INDEX ========== */
+.table-container {
+    display: block;
+
+    box-sizing: border-box;
+
+    padding: 40px;
+}
+
+.table-container table {
+    border-spacing: 0;
+}
+
+/* .table-container thead tr th {
+    text-align: center;
+} */
+
+td,
+th {
+    padding: 16px;
+
+    border-bottom: 1px solid #d9d9d9;
+
+    text-align: center;
+}
+
+th {
+    text-transform: uppercase;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+
+    align-items: center;
+}
+
+tbody tr td:first-child span {
+    width: 40px;
+    height: 40px;
+
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 50%;
+    border: 2px solid white;
+
+    box-shadow: 3px 1px 6px -4px black;
+}
+
+tbody tr td:last-child a {
+    background-color: var(--primary-color);
+
+    padding: 8px 16px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: white;
+
+    font-size: 12px;
+
+    border-radius: 6px;
+}
+
+.table-container thead tr th:last-child,
+td:last-child {
+    text-align: center;
+}
+
+tbody tr td:nth-child(2) span {
+    background-color: teal;
+
+    padding: 8px 16px;
+
+    margin-right: 4px;
+    margin-top: 8px;
+
+    border-radius: 16px;
+
+    color: whitesmoke;
+
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    display: inline-block;
+}

@@ -1,0 +1,38 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/keyframes.css">
+{% endblock head %}
+
+{% block content %}
+        <div class="card table-container">
+       <table width="100%">
+           <thead>
+               <tr>
+                   <th>Nome</th>
+                   <th>Atendimento</th>
+                   <th>Ação</th>
+               </tr>
+           </thead>
+
+           <tbody>
+               {% for teacher in teachers %}
+                    <tr>
+                        <td>
+                            <span style="background-image: url({{ teacher.avatar_url }})"></span>
+                            {{ teacher.name }}
+                        </td>
+                        <td>
+                            {% for expertise in teacher.expertise %}
+                                <span>{{ expertise }}</span>
+                            {% endfor %}
+                        </td>
+                        <td><a href="/teachers/{{ teacher.id }}">Ver</a></td>
+                    </tr>
+               {% endfor %}
+           </tbody>
+       </table>
+    </div>
+{% endblock content %}
