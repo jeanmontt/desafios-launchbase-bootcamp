@@ -2,7 +2,7 @@
 const currentPage = location.pathname;  //rota atual da página
 const menuItems = document.querySelectorAll("header .links a");
 
-for (item of menuItems) {
+for (item of menuItems) {       //para cada item do menuItems
     if (currentPage.includes(item.getAttribute("href"))) {     //se a página conter o value do href do item incluida
         item.classList.add("active");       //adiciona a classe active ao item
     }       
