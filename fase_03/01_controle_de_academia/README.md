@@ -34,7 +34,7 @@
 - [Apresentação, edição e formatação dos dados de um professor](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-4_show-edit-format-teacher) ✔️
 - [HTTP: PUT e DELETE](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-5_put-delete-teacher) ✔️
 - [Listagem de professores](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-6_list-teachers) ✔️
-- Estruturando estudantes 🚧️
+- [Estruturando estudantes](https://github.com/jeanmontt/desafios-launchbase-bootcamp/tree/master/fase_03/01_controle_de_academia/desafio_04-7_students) ✔️
 - Administração do Foodfy 🚧️
 
 ## :calendar: Entrega
